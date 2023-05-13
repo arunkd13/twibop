@@ -1,0 +1,304 @@
+%!TEX TS-program = lualatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\documentclass[9pt,twoside]{book}
+\usepackage{geometry}               
+\geometry{paperheight=175mm,paperwidth=175mm, textwidth=100mm, textheight=125mm,                 top=20mm, bottom=20mm, marginparwidth=50mm, headsep=8mm, left=10mm, right=65mm, marginparsep=5mm, footskip=10mm}%,asymmetric}                   % ... or a4paper or a5paper 
+
+
+% font packages
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage{garamondx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\usepackage[T1]{fontenc}
+%
+%\usepackage{fouriernc}
+%\usepackage[]{libertinus}
+
+%%\usepackage{stix}
+%\usepackage[osf]{CormorantGaramond}
+%\usepackage[LGRgreek,italic]{mathastext}
+%%\usepackage{baskervald}
+\usepackage{unicode-math}
+%
+\usepackage[lining]{ebgaramond}
+%\setmainfont{EBGaramond-Regular}
+\setmathfont{Garamond Math}[Scale=MatchUppercase]
+
+
+\setmonofont{Latin Modern Mono Light}
+%\usepackage{nimbussans}
+\setsansfont{Josefin Sans}
+ \DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ } 
+ 
+%\usepackage{fullpage}
+
+\usepackage[svgnames,x11names,table]{xcolor}
+
+
+\usepackage{marginnote}
+
+\usepackage{sidenotes}
+
+\renewcommand*{\marginfont}{\footnotesize}
+\renewcommand\raggedrightmarginnote{}
+\renewcommand\raggedleftmarginnote{}
+
+\makeatletter
+\ExplSyntaxOn
+\RenewDocumentCommand \@sidenotes@placemarginal { m m }
+{
+  \IfNoValueOrEmptyTF{#1}
+    % substitue \marginnote from marginnote pkg for \marginpar 
+    % from latex2e format
+    {\marginnote{#2}}
+    {\marginnote{#2}[#1]}
+}
+\ExplSyntaxOff
+\makeatother
+%https://tex.stackexchange.com/questions/532245/how-to-modify-fonts-in-sidenotes
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=darkgray,linktoc=all}% uncomment this line if you 
+
+
+
+\usepackage{xltxtra}
+\usepackage{relsize}
+
+
+\usepackage{soul}
+\usepackage[tracking=smallcaps,letterspace=100]{microtype}
+
+
+% for customising ToC 
+ \usepackage{tocloft}
+% set the font for the toc 
+\renewcommand{\cfttoctitlefont}{\Large\bfseries\color{CornflowerBlue}}
+\renewcommand\cftchappagefont{\color{SteelBlue}}
+% set the distance between the section number and section title
+\setlength{\cftsecnumwidth}{2em}
+
+\usepackage{textcase}
+\usepackage[width=113mm]{fullwidth}
+
+ \usepackage{fancyhdr}
+ \addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+%\addtolength{\headwidth}{\marginparwidth}
+
+ \pagestyle{fancy}
+% %\fancyhead{}
+ \setlength{\headheight}{15pt}
+ \renewcommand{\headrulewidth}{0pt}% 2pt header rule
+  \renewcommand{\chaptermark}[1]{%
+   \markboth{\textls[100]{#1}}{}}
+
+ \renewcommand{\sectionmark}[1]{\markright{\textls[100]{ #1}}}
+ \fancyhf{}
+
+\fancyhead[RO]{\textsc{\smaller{\MakeTextLowercase\rightmark}}}
+
+% \fancyhead[RO]{{\smaller{\MakeTextLowercase\rightmark\textsc}}}
+
+
+ \fancyhead[L]{\scriptsize{\thepage}}
+
+\makeatletter
+\fancyhead[RE]{\if@mainmatter \fi \textsc{\smaller{\MakeTextLowercase\leftmark}}}
+\makeatother
+\newcommand{\drkgry}[1]{\textcolor{darkgray}{{#1}}}
+\newcommand*\figr[1]{\hyperref[#1]{Figure~\ref{#1}}}
+\newcommand*\tabl[1]{\hyperref[#1]{Table~\ref{#1}}}
+\newcommand*\sect[1]{\hyperref[#1]{(Section~\ref{#1})}}
+
+\newcommand{\redem}[1]{\textcolor{OrangeRed}{\emph{~#1}}}% prints in red emphasised
+\newcommand{\hlrsc}[1]{\textcolor{OrangeRed}{\large{\textls[100]{#1}}}}% 
+\newcommand{\bluq}[1]{\textcolor{SteelBlue}{\emph{~#1}}}% prints in blue
+\newcommand{\hltxt}[1]{\textcolor{OrangeRed}{#1}}% prints in red
+\newcommand{\hlred}[1]{\textcolor{Maroon}{#1}}% prints in red
+\newcommand{\hlblu}[1]{\textcolor{SteelBlue}{#1}}% prints in blue
+\newcommand{\hlgreen}[1]{\textcolor{SeaGreen}{#1}}% prints in green
+
+\AtBeginEnvironment{quote}{\small}
+\AtBeginEnvironment{quote}{\vspace{-0.25\baselineskip}}
+\AtEndEnvironment{quote}{\vspace{-0.25\baselineskip}}
+
+% symbols
+
+
+% fancy verbose environment
+\usepackage{fancyvrb}
+
+% better fractions
+\usepackage{nicefrac}
+
+% boxes
+
+
+% for epigraphs and quotes
+%\usepackage{dirtytalk}
+
+\usepackage{epigraph}
+
+\renewcommand{\epigraphrule}{0pt}
+\setlength{\epigraphwidth}{0.75\textwidth}
+ \renewcommand{\epigraphflush}{hfill}% changed <<<<<<<<<<<<<<<
+    \setlength{\beforeepigraphskip}{0cm}
+\renewcommand{\epigraphsize}{\small}
+
+\setlength{\parskip}{0.5\baselineskip}
+%\usepackage{pstricks}
+
+\renewcommand{\baselinestretch}{1}
+
+\newenvironment{psmallmatrix}
+  {\left(\begin{smallmatrix}}
+  {\end{smallmatrix}\right)}
+
+% standardised units
+
+\usepackage{siunitx}
+\sisetup{text-celsius = \degree\kern-\scriptspace C}
+
+
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+
+
+\usepackage{emptypage}
+
+\usepackage{sectsty}
+\chapterfont{\bfseries\color{OrangeRed}}  % sets colour of chapters
+\sectionfont{\itshape\color{SteelBlue}}
+
+\newcolumntype{A}{%
+>{\color{black}\columncolor{LightYellow}[0.9\tabcolsep]%
+\raggedright}c}
+
+\newcommand\txthead[1]{%
+        \textcolor{OrangeRed3}{\textbf{#1}}}
+        
+\usepackage{enumitem}
+% tables
+\usepackage{booktabs}
+
+\usepackage{url}
+\urlstyle{rm}
+%\usepackage{tikz}
+%
+%\usetikzlibrary{arrows}
+%\usetikzlibrary{trees}
+%\usetikzlibrary{positioning}
+%\usetikzlibrary{shapes,arrows}
+%\usetikzlibrary{decorations.text}
+%\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+%            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+
+\usepackage{empheq}
+\usepackage[many]{tcolorbox}
+
+%\tcbset{
+%  highlight math style={
+%    enhanced,
+%    colframe= SteelBlue,
+%    colback= SteelBlue!10,
+%    boxrule=1pt,
+%  }
+%}
+
+\newtcolorbox{mybox}[1]{breakable,colback=Azure1!40!white,colframe= MediumPurple4,title={#1},fontupper=\itshape,fonttitle=\small\bfseries,colupper=MediumPurple4,boxrule=.5pt}
+
+
+\usepackage{caption}
+\usepackage{mhchem}
+\usepackage{physics}
+
+\usepackage{etoolbox}
+\patchcmd{\part}{plain}{empty}{}{}
+
+%\newcommand*\athr{\textcolor{Tomato}{\textsc{Author: }}}
+%\newcommand*\rdr{\textcolor{SteelBlue}{\textsc{Reader: }}}
+%\newcommand*\prtnr{\textcolor{SteelBlue}{\textsc{Partner: }}}
+
+%\usepackage{dialogue}
+
+% for setting the dialogues
+\usepackage{dialogue}
+
+\renewcommand*\DialogueLabel [1] { \textsc{#1}:}%\hfil}
+
+% custom commands for speaking
+
+\newcommand{\athr}{\speak{author}}
+\newcommand{\rdr}{\speak{reader}}
+\newcommand{\prtnr}{\speak{partner}}
+\newcommand{\ques}{\speak{question}}
+\newcommand{\ans}{\speak{answer}}
+%\newcommand{\stda}{\speak{Student~A}}
+%\newcommand{\stdb}{\speak{Student~B}}
+%\newcommand{\stdc}{\speak{Student~C}}
+
+\usepackage{pdfpages}
+
+
+\title{The World Is Built On Probability}
+\author{Lev Tarasov}
+\date{2023}
+
+\begin{document}
+
+\includepdf{figures/twibop2fc.pdf}
+\includepdf{figures/twibopfj.pdf}
+\includepdf{figures/twibopbj.pdf}
+
+\cleardoublepage
+
+\arrayrulecolor{gray} % <sets color of the \hline in tables
+%\verbatimfontfamily{inconsolata}
+\maketitle
+
+
+
+%\begin{savequote}[0.55\linewidth]
+
+%\newline
+%\qauthor{F. Engels}
+%\end{savequote}
+\input{00-title}
+
+\tableofcontents
+
+\input{00-preface}
+
+\mainmatter
+
+\part{Tamed Chance}
+\input{00-intro}
+\input{01-maths-of-random}
+\input{02-descision}
+\input{03-control}
+
+
+\part{Fundamentality of the Probability Laws}
+\input{04-classical-physics}
+\input{05-quantum-physics}
+\input{06-biology}
+\input{07-conc-conv}
+\input{08-literature}
+
+\cleardoublepage
+\includepdf{figures/twibopfj.pdf}
+\includepdf{figures/twibopbj.pdf}
+\includepdf{figures/twibop2bc.pdf}
+\end{document}
+
