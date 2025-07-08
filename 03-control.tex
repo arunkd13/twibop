@@ -66,7 +66,7 @@ control.
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.75\linewidth]{figures/control-scheme-1.pdf}
-\sidecaption{Two different control schemes.\label{control-scheme-1}}
+\caption{Two different control schemes.\label{control-scheme-1}}
 %fig 3.1
  \end{figure}
 
@@ -125,7 +125,7 @@ where $V_{1}, V_{2}, \ldots , V_{m}$ are its inputs (control signals), $P$ is a 
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.8\linewidth]{figures/black-box-1.pdf}
-\sidecaption{A black box is a system whose inputs and outputs are known, but internal structure is not.\label{black-box-1}}
+\caption{A black box is a system whose inputs and outputs are known, but internal structure is not.\label{black-box-1}}
 % fig 3.2
  \end{figure}
  
@@ -307,7 +307,7 @@ looking at \figr{binary-conversion}.
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.75\linewidth]{figures/binary-conversion.pdf}
-\sidecaption{Representing the number 235 in decimal and binary systems.
+\caption{Representing the number 235 in decimal and binary systems.
 \label{binary-conversion}}
 % fig 3.3
  \end{figure}
@@ -324,7 +324,7 @@ are shown in \figr{railway-switches}.
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.8\linewidth]{figures/railway-switches.pdf}
-\sidecaption{Controlling railway lines by using switches.\label{railway-switches}}
+\caption{Controlling railway lines by using switches.\label{railway-switches}}
 % fig 3.4
  \end{figure}
 
@@ -437,7 +437,7 @@ answers in this game contained 1 bit of information.
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.85\linewidth]{figures/32-pupils.pdf}
-\sidecaption{Finding out the selected pupil from a group of 32.\label{32-pupils}}
+\caption{Finding out the selected pupil from a group of 32.\label{32-pupils}}
 % fig 3.5
  \end{figure}
 
@@ -571,11 +571,11 @@ a ``yes'' is 1/4, while that of a ``no'' is 3/4. The answer to this question
 would contain less than 1 bit of information. According to \eqref{eq-3.3}, in which we substitute $P = 1/4$, each answer contains 0.8 bit of information.
 
 
-\begin{marginfigure}%[3cm]%[!ht]
+\begin{figure}%[3cm]%[!ht]
  \centering
  \includegraphics[width=\linewidth]{figures/shannon-distro.pdf}
 \caption{Graph of Shannon distribution.\label{shannon-distro}}
- \end{marginfigure}
+ \end{figure}
 
 
 Once again I emphasize that control processes should be regarded in
@@ -597,7 +597,7 @@ I_{\eta} \, (\xi) = \sum_{i=1}^{N}\sum_{j=1}^{M} P_{i}(j) \, p_{i}  \, \log_{2} 
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.8\linewidth]{figures/comm-channel.pdf}
-\sidecaption{A communication channel for transmitting information.\label{comm-channel}}
+\caption{A communication channel for transmitting information.\label{comm-channel}}
 % fig 3.7
 \end{figure}
 Here the information $I$ is in terms of two types of probability, the
@@ -636,7 +636,7 @@ probability for the transmission.
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.8\linewidth]{figures/noise1.pdf}
-\sidecaption{A communication channel with a filter.\label{noise1}}
+\caption{A communication channel with a filter.\label{noise1}}
 % fig 3.8
  \end{figure}
  
@@ -650,7 +650,7 @@ channel output, $P$ is noise, and $F$ is a smoothing filter), (b) is the signal 
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.8\linewidth]{figures/noise2.pdf}
-\sidecaption{A communication channel with a filter and signal multiplier.\label{noise2}}
+\caption{A communication channel with a filter and signal multiplier.\label{noise2}}
 % fig 3.9
  \end{figure}
  
@@ -791,12 +791,12 @@ become the subject of scientific investigation in the mid-$20^{\text{th}}$ centu
 the early 1950s which could be a \redem{selection amplifier}. Ashby called it an
 \redem{intelligence amplifier}. A diagram of this amplifier is given in \figr{selection-amp}.
 
-\begin{marginfigure}[-3cm]%[!ht]
+\begin{figure}%[!ht]
  \centering
  \includegraphics[width=\linewidth]{figures/selection-amp.pdf}
  \caption{A selection amplifier.\label{selection-amp}}
 % fig 3.10
- \end{marginfigure}
+ \end{figure}
 Noise generator 1 supplies ``raw material'' to the first stage of the
 amplifier. The noise converter 2 produces various random variants of
 the subjects to be selected. The selection is performed in unit 3 in
@@ -837,13 +837,13 @@ down'' and starts functioning normally.
 In 1948 Ashby designed a device which possessed the property of
 self-organization on the basis of random search. He called the device
 a \redem{homeostat}. A diagram of a homeostat is shown in \figr{homeostat}.
-\begin{marginfigure}%[3cm]%[!ht]
+\begin{figure}%[3cm]%[!ht]
  \centering
  \includegraphics[width=0.9\linewidth]{figures/homeostat.pdf}
 \caption{A homeostat is a device which possessed the property of
 self-organization on the basis of random search.\label{homeostat}}
 % fig 3.11
- \end{marginfigure}
+ \end{figure}
 A homeostat is often compared to a sleeping cat. If the cat is bothered,
 it wakes up, chooses a new more comfortable position, and goes to sleep
 again. A homeostat behaves in a similar manner: when it is ``woken up'',
@@ -865,13 +865,13 @@ needed firstly on the new state, and, secondly, on how the transition of
 the system to the new state can he carried out. Since the chance in the
 unit 4 having verified the stability sends a signal to control unit 2, which
 switches off the random parameter generator 3.
-\begin{marginfigure}[-2cm]%[!ht]
+\begin{figure}%[!ht]
  \centering
  \includegraphics[width=0.9\linewidth]{figures/fonts.pdf}
 \caption{A selection of different ways of writing letter A.}
 \label{fonts}
 % fig 3.12
- \end{marginfigure}
+ \end{figure}
 \section{On the Way to a Stochastic Model of the Brain}
 
 \txthead{The pattern recognition problem.} We do not commonly think about the
@@ -909,7 +909,7 @@ the images in \figr{perceptron1} (a) and (b) as the same pattern while those in 
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=\linewidth]{figures/perceptron1.pdf}
-\sidecaption{Signals and their interpretations by a perceptron.\label{perceptron1}}
+\caption{Signals and their interpretations by a perceptron.\label{perceptron1}}
 % fig 3.13
  \end{figure}
 Secondly, the random nature of these relations suggests the \redem{adjustment}
@@ -935,7 +935,7 @@ number generator.
 \begin{figure}[ht]
  \centering
  \includegraphics[width=.68\linewidth]{figures/perceptron2.pdf}
-\sidecaption{Schematic diagram of the simplest perceptron.\label{perceptron2}}
+\caption{Schematic diagram of the simplest perceptron.\label{perceptron2}}
 % fig 3.13
  \end{figure}
  

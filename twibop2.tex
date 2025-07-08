@@ -4,8 +4,7 @@
 
 \documentclass[9pt,twoside]{book}
 \usepackage{geometry}               
-\geometry{paperheight=175mm,paperwidth=175mm, textwidth=100mm, textheight=125mm,                 top=20mm, bottom=20mm, marginparwidth=50mm, headsep=8mm, left=10mm, right=65mm, marginparsep=5mm, footskip=10mm}%,asymmetric}                   % ... or a4paper or a5paper 
-
+\geometry{a5paper,inner=13.33mm,outer=20mm,top=25mm,bottom=20mm,twoside,bindingoffset=1mm}%,asymmetric}                   % ... or a4paper or a5paper 
 
 % font packages
 %\usepackage[urw-garamond]{mathdesign}
@@ -40,26 +39,27 @@
 \usepackage[svgnames,x11names,table]{xcolor}
 
 
-\usepackage{marginnote}
+%\usepackage{marginnote}
 
-\usepackage{sidenotes}
+%\usepackage{sidenotes}
 
-\renewcommand*{\marginfont}{\footnotesize}
-\renewcommand\raggedrightmarginnote{}
-\renewcommand\raggedleftmarginnote{}
 
-\makeatletter
-\ExplSyntaxOn
-\RenewDocumentCommand \@sidenotes@placemarginal { m m }
-{
-  \IfNoValueOrEmptyTF{#1}
+%\renewcommand*{\marginfont}{\footnotesize}
+%\renewcommand\raggedrightmarginnote{}
+%\renewcommand\raggedleftmarginnote{}
+
+%\makeatletter
+%\ExplSyntaxOn
+%\RenewDocumentCommand \@sidenotes@placemarginal { m m }
+%{
+  %\IfNoValueOrEmptyTF{#1}
     % substitue \marginnote from marginnote pkg for \marginpar 
     % from latex2e format
-    {\marginnote{#2}}
-    {\marginnote{#2}[#1]}
-}
-\ExplSyntaxOff
-\makeatother
+    %{\marginnote{#2}}
+    %{\marginnote{#2}[#1]}
+%}
+%\ExplSyntaxOff
+%\makeatother
 %https://tex.stackexchange.com/questions/532245/how-to-modify-fonts-in-sidenotes
 
 \usepackage{hyperref}
@@ -87,8 +87,8 @@
 \usepackage[width=113mm]{fullwidth}
 
  \usepackage{fancyhdr}
- \addtolength{\headwidth}{\marginparsep}
-\addtolength{\headwidth}{\marginparwidth}
+ %\addtolength{\headwidth}{\marginparsep}
+%\addtolength{\headwidth}{\marginparwidth}
 %\addtolength{\headwidth}{\marginparwidth}
 
  \pagestyle{fancy}

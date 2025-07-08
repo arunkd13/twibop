@@ -72,7 +72,7 @@ The probability of one event of several exclusive events occurring is the sum of
 \newcolumntype{g}{>{\columncolor{LightYellow}}c}
 %\begin{table}[ht]
 
-\begin{marginfigure}[-1cm]
+\begin{figure}
 \begin{footnotesize}
 \centering
 \setlength\arrayrulewidth{1.25pt}\arrayrulecolor{Tomato}
@@ -97,7 +97,7 @@ The probability of one event of several exclusive events occurring is the sum of
 \caption{Possible outcomes of rolling a die.\label{die-table}}
 \end{footnotesize}
 %fig 1.1
-\end{marginfigure}
+\end{figure}
 
 Suppose that two dice are thrown. What is the probability of getting
 two fours at the same time? The total number of equally possible
@@ -120,7 +120,7 @@ By the was, it is not necessary for the events to be simultaneous. Instead of th
  \begin{figure}[t]
  \centering
  \includegraphics[width=0.9\textwidth]{figures/die-graph.pdf}
-\sidecaption{Outcomes of rolling a dice many times.\label{die-graph}}
+\caption{Outcomes of rolling a dice many times.\label{die-graph}}
 %fig 1.2
  \end{figure}
  
@@ -165,7 +165,7 @@ the axis of ordinates.
 \begin{figure}%[ht]
  \centering
  \includegraphics[width=0.9\textwidth]{figures/die-graph2.pdf}
-\sidecaption{Frequencies of outcomes of trials of a die as a function of number of trials. Note how the deviation of the frequency of the occurrence of an event from its probability decreases as the number of trials increases.\label{die-graph2}}
+\caption{Frequencies of outcomes of trials of a die as a function of number of trials. Note how the deviation of the frequency of the occurrence of an event from its probability decreases as the number of trials increases.\label{die-graph2}}
  \end{figure}
  
 Naturally, if we perform the experiment again,
@@ -281,7 +281,7 @@ points are within the blue part of the square in the \figr{prob-meeting}.
   \begin{figure}[ht]
  \centering
  \includegraphics[width=0.9\textwidth]{figures/prob-meeting.pdf}
-\sidecaption{Finding the probability using the geometrical method.\label{prob-meeting}}
+\caption{Finding the probability using the geometrical method.\label{prob-meeting}}
 %fig 1.4
  \end{figure}
   
@@ -423,7 +423,7 @@ A diagram of these equivalent random number generators is shown in \figr{random-
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.82\textwidth]{figures/random-generators.pdf}
-\sidecaption{Three types of random number generators: urns, dice and roulettes.
+\caption{Three types of random number generators: urns, dice and roulettes.
 \label{random-generators}}
  \end{figure}
 %\clearpage
@@ -486,7 +486,7 @@ the sequence of digits.
 \hline
 \end{tabular}
 \end{footnotesize}
-\sidecaption{A table of random numbers.\label{random-table}}
+\caption{A table of random numbers.\label{random-table}}
 \end{figure}
 
 This is not amazing. A chance is a chance. But a chance has a reverse
@@ -549,12 +549,12 @@ When we throw a die or take a ball out of an urn we deal with
 a \redem{random event}. There are several interesting problems where the
 probability of a random event is required to be found.
 
-\begin{marginfigure}[-1cm]%[!h]
+\begin{figure}%[!h]
  \centering
  \includegraphics[width=\textwidth]{figures/three-balls.pdf}
 \caption{Different ways of taking out two out of three blue and one
   red balls.\label{three-balls}}
-\end{marginfigure}
+\end{figure}
 
 
 \txthead{A problem with coloured balls.} There are three blue balls and a red
@@ -637,7 +637,7 @@ himself the greatest chance of being saved?
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.75\textwidth]{figures/ball-picking.pdf}
-\sidecaption{Different ways of arranging two white and two black balls for
+\caption{Different ways of arranging two white and two black balls for
   different probabilities of drawing out a ball of a given colour.\label{ball-picking}}
  \end{figure}
 
@@ -663,11 +663,11 @@ strategy is to distribute the balls as shown in (\figr{ball-picking}~\drkgry{(d)
 death trap, as shown in \figr{labyrinth}. Unlucky treasure-hunters
 die in the trap. What is the Probability that they will avoid the trap
 and reach the treasure?
-\begin{marginfigure}[-3cm]
+\begin{figure}
  \centering
  \includegraphics[width=0.9\textwidth]{figures/labyrinth.pdf}
 \caption{The probability of finding the treasure or a trap in a labyrinth.\label{labyrinth}}
- \end{marginfigure}
+ \end{figure}
  
 After walking away from the entrance $A$ to point {1} (see \figr{labyrinth}) a treasure-hunter may either go straight ahead (in
 which case he walks directly into the trap) or turn to the left (in
@@ -744,7 +744,7 @@ Let $x$ be a discrete random variable which may assume $s$ values: $x_{1}, x_{2}
 \sum_{m=1}^{s} \, p_{m}= 1,
 \label{eq-1.3}
 \end{equation}
-\marginnote{The notation $\displaystyle \sum_{m=1}^{s}$ means that the summation is performed over all $m$ from 1 to $s$.}
+\footnote{The notation $\displaystyle \sum_{m=1}^{s}$ means that the summation is performed over all $m$ from 1 to $s$.}
 The set of probabilities $p_{1} + p_{2} + \ldots + p_{s}$ (also called
 the distribution of the probabilities) contains all the information
 needed about the random variable. However, we do not need all the
@@ -800,7 +800,7 @@ Indeed,
 \begin{figure}[!h]
  \centering
  \includegraphics[width=\textwidth]{figures/exp-val-variation.pdf}
-\sidecaption{Distributions of random variables with different
+\caption{Distributions of random variables with different
   parameters. (a) shows two distributions with different expected
   values but the same variance, while (b) shows two distributions with
   different variance but the same expected values.\label{exp-val-variation}}
@@ -892,7 +892,7 @@ random variable. I shall explain this term below, and we shall see that
 \begin{figure}[!h]
  \centering
  \includegraphics[width=0.8\textwidth]{figures/binomial-dist.pdf}
-\sidecaption{The binomial distribution. \label{binomial-dist}}
+\caption{The binomial distribution. \label{binomial-dist}}
  \end{figure}
 
 
@@ -958,7 +958,7 @@ distribution with $E\,(m)= 1.5$.
 \begin{figure}[!h]
  \centering
  \includegraphics[width=0.9\textwidth]{figures/poisson-gaussian.pdf}
-\sidecaption{The Poisson (right) and Gaussian (left) distributions.
+\caption{The Poisson (right) and Gaussian (left) distributions.
 \label{poisson-gaussian}}
  \end{figure}
 
@@ -1013,7 +1013,7 @@ $x$-coordinate of the point where the needle crosses the number axis
 \begin{figure}[!h]
  \centering
  \includegraphics[width=0.8\textwidth]{figures/needle.pdf}
-\sidecaption{The probability that a continuous random variable will take a
+\caption{The probability that a continuous random variable will take a
   certain value is zero.\label{needle}}
  \end{figure}
 We could also use a roulette instead of throwing a needle. A strip of
@@ -1041,17 +1041,17 @@ $\Delta x / 2 \pi R $ becomes zero.  Thus we can see that the
 probability that a continuous random variable will take a certain
 value is indeed zero.
 
-\begin{marginfigure}[-4cm]%[!h]
+\begin{figure}%[!h]
  \centering
  \includegraphics[width=0.9\textwidth]{figures/roulette.pdf}
 \caption{A roulette to generate continuous random variables.\label{roulette}}
- \end{marginfigure}
+ \end{figure}
 
-\begin{marginfigure}[2cm]%[!h]
+\begin{figure}%[!h]
  \centering
  \includegraphics[width=0.9\textwidth]{figures/cubes.pdf}
 \caption{A finite non-zero mass can be generated from the sum of an infinite number of zero masses.\label{cubes}}
- \end{marginfigure}
+ \end{figure}
 
 
 That event may be both possible and possess a zero probability may
@@ -1072,14 +1072,14 @@ roulette arrow stops within a given range $\Delta x$ is the \redem{sum
   of an infinite number of zero probabilities} that the arrow will
 stop at each individual value within the considered range.
 
-%\begin{marginfigure}%[!h]
+%\begin{figure}%[!h]
 % \centering
 % \includegraphics[width=0.4\textwidth]{figures/fig-15.pdf}
 %\caption{The nonzero mass of the
 %body is the \redem{sum of an infinite number of zero masses} of its
 %separate points.}
 %\label{fig-1.15}
-% \end{marginfigure}
+% \end{figure}
 
 
 
@@ -1190,7 +1190,7 @@ scatter of the obtained diameters around the desired value.
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=0.75\textwidth]{figures/three-sigma.pdf}
-\sidecaption[][-2cm]{The three-sigma rule for a Gaussian distribution.\label{three-sigma}}
+\caption{The three-sigma rule for a Gaussian distribution.\label{three-sigma}}
  \end{figure}
 
 
