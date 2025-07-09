@@ -47,7 +47,7 @@ show that $\tau = \SI{d3}{\second}$.
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/decay.pdf}
+\includegraphics[width=0.75\tfwidth]{figures/decay.pdf}
 \caption{The number of neutrons decaying as a function of time.\label{decay-fn}}
 \end{figure}
 
@@ -147,7 +147,7 @@ families} (or series).
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/spont-fission.pdf}
+\includegraphics[width=0.8\tfwidth]{figures/spont-fission.pdf}
 \caption{The number of neutrons decaying as a function of time.\label{spon-fission}}
 \end{figure}
 
@@ -175,7 +175,7 @@ energies $E_{1}$ and $E_{2}$ (\figr{emission}). The transition $E_{1} \to E_{2}$
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.7\textwidth]{figures/emission.pdf}
+\includegraphics[width=0.7\tfwidth]{figures/emission.pdf}
 \caption{Induced and spontaneous emissions in a two level quantum system.\label{emission}}
 \end{figure}
 
@@ -210,7 +210,7 @@ prevails. The result is an intense beam of laser photons.
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/laser.pdf}
+\includegraphics[width=0.75\tfwidth]{figures/laser.pdf}
 \caption{ A schematic explanation of how does the laser emission works.
 \label{laser}}
 \end{figure}
@@ -311,11 +311,11 @@ Let us consider a plane in which the $x$-coordinate of a body is plotted
 along one axis (the $x$-axis) and its momentum's $x$-component is plotted
 along the other axis (the $p_{x}$-axis) (\figr{unc}). If the body obeyed the laws of classical mechanics, its any state would be a point in the plane. However, the state of a micro-body corresponds to a rectangle with area $\hbar$. Other types of state are also possible. They correspond to rectangles of various shapes. Some of them are presented in the figure.
 
-\begin{figure}
+\begin{wrapfigure}{O}{\mfwidth}
 \centering
-\includegraphics[width=1.\textwidth]{figures/unc.pdf}
+\includegraphics[width=1.\linewidth]{figures/unc.pdf}
 \caption{ States of a micro-body.\label{unc}}
-\end{figure}
+\end{wrapfigure}
 
 \txthead{Uncertainty relations and the wave properties of a micro-body}. In
 1924, the French physicist Louis de Broglie (b.~1892) hypothesized that
@@ -333,7 +333,7 @@ plate the electrons spread out in a \redem{diffraction} pattern (\figr{diffracti
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/diffraction-01.pdf}
+\includegraphics[width=0.75\tfwidth]{figures/diffraction-01.pdf}
 \caption{ Electron diffraction experiment proved the wave properties of the electrons.\label{diffraction1}}
 \end{figure}
 
@@ -347,11 +347,11 @@ The electrons are diffracted when they pass through the slit. According to class
 
 
 
-\begin{figure}%[-4cm]
+\begin{wrapfigure}{O}{\mfwidth}
 \centering
-\includegraphics[width=0.9\textwidth]{figures/diffraction-02.pdf}
+\includegraphics[width=0.9\linewidth]{figures/diffraction-02.pdf}
 \caption{ Electron diffraction experiment as understood by the uncertainty of the momentum and direction.\label{diffraction2}}
-\end{figure}
+\end{wrapfigure}
 
 
 \txthead{The wave function.} Suppose a micro-body is in a state such that the $x$-component of its momentum has a value $p_{0}$. We know that the value of the $x$-coordinate of the micro-body in this state is very uncertain. In other words, the micro-body may be found at any place on the $x$-axis.
@@ -389,7 +389,7 @@ functions $\Psi_{j}(x, y, z)$, where $j$ is a set of some numbers characterizing
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/orbitals.pdf}
+\includegraphics[width=0.8\tfwidth]{figures/orbitals.pdf}
 \caption{ Electron clouds in an atom.\label{orbitals}}
 \end{figure}
 
@@ -410,7 +410,7 @@ then are detected on a special screen (\figr{double-slit}).
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/interference.pdf}
+\includegraphics[width=0.8\tfwidth]{figures/interference.pdf}
 \caption{The two slit experiment.\label{double-slit}}
 \end{figure}
 Let us consider the $x$-coordinate of the particles. In order to deal with a \redem{probability} rather than a \redem{probability density}, suppose that the $x$-axis on the screen is separated into small identical intervals, so that when we speak of the probability that a particle arrives at a point $x$ we mean the probability of arriving at the appropriate part of the axis around point $x$.
@@ -543,11 +543,11 @@ nature of the wave approach. We shall discuss the diffusion of very slow
 neutrons passing through a crystal.
 
 \txthead{Diffusion of neutrons in a crystal.} A beam of neutrons with energies of only \SI{0.1}{\eV} is passed through a crystal. The neutrons diffused by the crystal's nuclei are registered by a system of detectors (counters) along the $x$-axis (\figr{neutron-diff}). The crystal contains $N$ nuclei, therefore, there are $N$ alternatives. Each alternative corresponds to the diffusion of a neutron by a nucleus. Let us use $ \Psi_{j} \, (x)$ to denote the probability amplitude that a neutron will arrive at the detector at point $x$ after diffusing past the $j$-th nucleus.
-\begin{figure}%[!ht]
+\begin{wrapfigure}{O}{\mfwidth}
 \centering
-\includegraphics[width=0.9\textwidth]{figures/neutron-diff.pdf}
+\includegraphics[width=0.9\linewidth]{figures/neutron-diff.pdf}
 \caption{Diffraction of neutrons through a crystal.\label{neutron-diff}}
-\end{figure}
+\end{wrapfigure}
 
 It is interesting that the diffusion of a neutron by a nucleus may occur
 in two ways. In one case the neutron's \redem{spin is inverted} while there is no such inversion in the other case. Let me explain. A neutron can be
@@ -588,12 +588,6 @@ Now let us express $ \abs{\Phi \, (x) }^{2}$ and $ \abs{X \, (x) }^{2}$ in terms
 \abs{\Phi \, (x) }^{2} = \sum_{j=1}^{N} \abs{\Psi_{j} \, (x) }^{2}.
 \label{eq-5.12}
 \end{equation}
-\begin{figure}%[!ht]
-\centering
-\includegraphics[width=\textwidth]{figures/neutron-dist.pdf}
-\caption{Distribution of diffraction of neutrons through a crystal.
-\label{neutron-dist}}
-\end{figure}
 If the spin of a diffused neutron has not been inverted, the alternatives
 are indistinguishable; therefore the probability amplitudes are to be
 summed up (amplitude superposition occurs) and hence
@@ -606,6 +600,14 @@ Substituting \eqref{eq-5.12} and \eqref{eq-5.13} into \eqref{eq-5.11}, we obtain
 w(x) = \left[  |\varphi |^{2} \,\,  \sum_{j=1}^{N} |\Psi_{j} \, (x) |^{2} \right] + \left[  |\chi |^{2} \,\,  \sum_{j=1}^{N} |\Psi_{j} \, (x) |^{2} \right] . 
 \label{eq-5.14}
 \end{equation}
+
+\begin{wrapfigure}[16]{O}{\mfwidth}
+\centering
+\includegraphics[width=\linewidth]{figures/neutron-dist.pdf}
+\caption{Distribution of diffraction of neutrons through a crystal.
+\label{neutron-dist}}
+\end{wrapfigure}
+
 The distribution of diffused neutrons $w(x)$ in experiment is shown in
 \figr{neutron-dist}. It consists of a smoothly varying ``background'' and a set of interference maxima. The ``background'' is defined in \eqref{eq-5.14}) by the term in the first square brackets while the interference maxima give the term in the second square brackets.
 

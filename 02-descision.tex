@@ -213,12 +213,12 @@ assumed to take place \redem{instantaneously}.
 conveniently considered using a diagram called a \redem{state graph}. The
 diagram shows the possible states a system may be in and indicates the
 possible transitions using arrows.
- \begin{figure}%[h]
+ \begin{wrapfigure}[12]{O}{\mfwidth}
  \centering
- \includegraphics[width=0.9\textwidth]{figures/state-graph1.pdf}
+ \includegraphics[width=0.9\linewidth]{figures/state-graph1.pdf}
 \caption{A state graph for system with four states.}
 \label{state-graph1}
- \end{figure}
+ \end{wrapfigure}
  
 Let us take an example. Suppose a system consists of two machine
 tools, each of which produces identical products. If a tool fails its repair
@@ -250,7 +250,7 @@ transition from state to state is random.
 
  \begin{figure}[!ht]
  \centering
- \includegraphics[width=0.85\textwidth]{figures/event-arrival.pdf}
+ \includegraphics[width=0.85\tfwidth]{figures/event-arrival.pdf}
 \caption{A record of taxi orders at a taxi depot.\label{event-arrival}}
  \end{figure}
 
@@ -322,12 +322,12 @@ and therefore the event arrival rate does not depend on time. i.e. we
 shall consider \redem{steady-state} arrivals.
 
 
- \begin{figure}%[h]
+ \begin{wrapfigure}{O}{\mfwidth}%[h]
  \centering
- \includegraphics[width=0.9\textwidth]{figures/state-graph2.pdf}
+ \includegraphics[width=0.9\linewidth]{figures/state-graph2.pdf}
 \caption{A state graph for system with four states with arrival rates.
 \label{state-graph2}}
- \end{figure}
+ \end{wrapfigure}
  
 \txthead{The Chapman-Kolmogorov equations for steady state.} Let us
 use $p_{i}$ to denote the probability that a system is in state
@@ -595,7 +595,7 @@ a \redem{single-server system with losses}. Here are some examples: a system wit
 Geiger-M\"uller counter. The state graph for such a system is shown in \figr{state-graph3}~\drkgry{(a)}. When the server is unoccupied, the system is in state $S_{0}$, and when the server is occupied, it is in state $S_{1}$. The customer’s arrival rate is $\lambda$, and the service completion rate is it $\mu$. This state graph is very simple. When the system is in state $S_{0}$ a customer arriving at the system transfers it to state $S_{1}$, and the servicing starts. Once the servicing is completed, the system returns to state $S_{0}$ and is ready to serve a new customer.
  \begin{figure}[!h]
  \centering
- \includegraphics[width=0.75\textwidth]{figures/state-graph3.pdf}
+ \includegraphics[width=0.75\tfwidth]{figures/state-graph3.pdf}
 \caption{State graph of a system with losses.\label{state-graph3}}
  \end{figure}
 
@@ -682,7 +682,7 @@ We may decide on increasing the number of servers. Suppose we add one more, a fo
 \txthead{Single-server systems with finite queues.} Suppose	the	number of queueing customers is restricted, and the queue may only accommodate $m$ customers. If all places in the queue are occupied, a newcomer is turned away. For example, a petrol station with only one pump (only one server) and a parking area for no more than $m$ cars. If all the places at the station are occupied, the next car arriving at the station will not stop and will go on to the next.
  \begin{figure}[!h]
  \centering
- \includegraphics[width=0.75\textwidth]{figures/state-graph4.pdf}
+ \includegraphics[width=0.75\tfwidth]{figures/state-graph4.pdf}
 \caption{State graph for a system (a) with finite queues and (b) with infinite queues.\label{state-graph4}}
 %fig 2.4
  \end{figure}
@@ -770,7 +770,7 @@ the number $\pi /4$. This approximation will become more accurate as the
 number of trials increases.
  \begin{figure}[!h]
  \centering
- \includegraphics[width=0.85\textwidth]{figures/monte-carlo1.pdf}
+ \includegraphics[width=0.85\tfwidth]{figures/monte-carlo1.pdf}
 \caption{Finding out value of $\pi$ using a random distribution.\label{monte-carlo1}}
 %fig 2.6
  \end{figure}
@@ -841,7 +841,7 @@ moving along the random number table (for instance, first down the first
 column from top to bottom, and then down the second column, and so
 on). The first fifteen random points are shown in the picture in red, and
 they have the coordinates as shown in \tabl{random-coord}.%\\[-15pt]
-\begin{table}
+\begin{wrapfloat}{table}{O}{\mfwidth}
 \centering
 \begin{smaller}
 \begin{tabular}{l}
@@ -864,7 +864,7 @@ they have the coordinates as shown in \tabl{random-coord}.%\\[-15pt]
 \end{smaller}
 %\end{center}
 \caption{Coordinates of fifteen random numbers shown in red in the \figr{monte-carlo2}. \label{random-coord}}
-\end{table}
+\end{wrapfloat}
 The figure contains 85 random points in black. From
 the diagram, it is easy to calculate that using the first fifteen points
 $N_{2}/N_{1}= 13/15$ and therefore $\pi = 3.47$ while for a hundred points
@@ -881,7 +881,7 @@ figure). It can be seen that $(N - n)/N = 0.9$ in this case, and this is close
 enough to the accurate value 0.875.
  \begin{figure}[!h]
  \centering
- \includegraphics[width=0.75\textwidth]{figures/monte-carlo3.pdf}
+ \includegraphics[width=0.75\tfwidth]{figures/monte-carlo3.pdf}
 \caption{Using a random number table instead of coin tosses for statistical testing.\label{monte-carlo3}}
 %fig 2.7
  \end{figure}
@@ -975,7 +975,7 @@ be made so as to guarantee the safety of the personnel working at the
 reactor.
  \begin{figure}[!h]
  \centering
- \includegraphics[width=0.85\textwidth]{figures/neutron-path.pdf}
+ \includegraphics[width=0.85\tfwidth]{figures/neutron-path.pdf}
 \caption{A set of all possible trajectories for the neutron.\label{neutron-path}}
 %fig 2.9
  \end{figure}
@@ -1074,7 +1074,7 @@ player equals the loss by the other.
 
  \begin{figure}[!h]
  \centering
- \includegraphics[width=0.6\textwidth]{figures/two-player1.pdf}
+ \includegraphics[width=0.6\tfwidth]{figures/two-player1.pdf}
 \caption{Strategies in a finite two-person zero-sum game.\label{twoplayer1}}
 %fig 2.10
  \end{figure}
@@ -1088,7 +1088,7 @@ the numbers is \redem{even}, player $B$ pays player $A$ the sum, while if the su
 
  \begin{figure}[!h]
  \centering
- \includegraphics[width=0.85\textwidth]{figures/two-player2.pdf}
+ \includegraphics[width=0.85\tfwidth]{figures/two-player2.pdf}
 \caption{A payoff matrix in a $3 \times 3$ finite two-person zero-sum game.\label{twoplayer2}}
 %fig 2.11
  \end{figure}
@@ -1104,12 +1104,12 @@ the payoff matrix (\figr{twoplayer3}). It is clear that we should choose a strat
 the \redem{maximin gain}, or the \redem{maximin}, or just the \redem{maxim}. It is also sometimes called the \redem{lower value of the gain}. Thus, if we select the maximin strategy (strategy $A_{1}$ in this case), our gain is guaranteed to be, whatever the behaviour of the opponent, at least the lower value of the game (a gain of 3 in this case). The opponent will reason in a similar way. If he selects
 strategy $B_{1}$, he will have to give us a gain of 10, which is his worst case.
 
- \begin{figure}%[!h]
+ \begin{wrapfigure}{O}{\mfwidth}
  \centering
- \includegraphics[width=0.9\textwidth]{figures/two-player3.pdf}
+ \includegraphics[width=0.9\linewidth]{figures/two-player3.pdf}
 \caption{A payoff matrix in a $3 \times 3$ finite two-person zero-sum game.\label{twoplayer3}}
 %fig 2.12
- \end{figure}
+ \end{wrapfigure}
 The same can be said of strategy $B_{2}$. Strategy $B_{3}$ yields the worst case
 for the opponent corresponding to a gain of 12 for us. Numbers 10, 10,
 and 12 are the maximum values of our gains corresponding to the
@@ -1137,7 +1137,7 @@ the minimum gains for strategies $A_{1}, \, A_{2}$, and $A_{3}$ and the minimum 
 
  \begin{figure}[!h]
  \centering
- \includegraphics[width=\textwidth]{figures/saddle-point.pdf}
+ \includegraphics[width=\tfwidth]{figures/saddle-point.pdf}
 \caption{A $3 \times 3$ game with saddle point.\label{saddle-point}}
 %fig 2.13
  \end{figure}
@@ -1225,18 +1225,19 @@ and hence $1/\nu$ should be as low as possible. Therefore, the search for the
 optimal mixed strategy is thus reduced to the solution of the following
 mathematical problem: find non-negative values $x_{1}, \, x_{2}, \, \ldots \, x_{m}$ such that they meet inequalities \eqref{eq-2.12} and minimize the sum $x_{1} + x_{2}+ \ldots{} + x_{m}$.
 
+ \begin{wrapfigure}{O}{\mfwidth}
+ \centering
+ \includegraphics[width=0.9\linewidth]{figures/anti-aircraft.pdf}
+\caption{Strategies with aeroplanes and anti-aircraft guns.\label{anti-aircraft}}
+%fig 2.14
+ \end{wrapfigure}
+
 \txthead{Airplanes against antiaircraft guns.} Let us find the optimal mixed
 strategy for a concrete game. Suppose ``player'' $A$ wants to attack
 ``player'' $B$. $A$ has two airplanes each carrying a large bomb. $B$ has four
 antiaircraft guns defending an important military base. To destroy the
 base, it is sufficient for at least one airplane to approach it. To approach
 the base the airplanes may choose one of four air corridors (\figr{anti-aircraft}, where 0 is the base and I, II, III, and IV are the air corridors). $A$ may send both airplanes along the same corridor or along different corridors. $B$ may place his four antiaircraft guns to cover the corridors in different ways. Each gun can only shoot once, but it will hit the airplane if it is in that corridor.
- \begin{figure}%[!h]
- \centering
- \includegraphics[width=0.9\textwidth]{figures/anti-aircraft.pdf}
-\caption{Strategies with aeroplanes and anti-aircraft guns.\label{anti-aircraft}}
-%fig 2.14
- \end{figure}
  
 $A$ has two pure strategies: strategy $A_{1}$ to send the airplanes along
 different corridors (no matter which ones), and $A_{2}$, to send both
@@ -1249,12 +1250,12 @@ and $B_{5}$ to put all four guns into one corridor. Strategies $B_{4}$ and $B_{5
 needed, since $A$ only has two airplanes. Therefore, we need only discuss
 strategies $B_{1}$, $B_{2}$, and $B_{3}$.
 
- \begin{figure}%[!h]
+ \begin{wrapfigure}{O}{\mfwidth}
  \centering
- \includegraphics[width=0.7\textwidth]{figures/aa-matrix.pdf}
+ \includegraphics[width=0.7\linewidth]{figures/aa-matrix.pdf}
 \caption{Matrix of probable with aeroplanes and anti-aircraft guns.\label{aa-matrix}}
 %fig 2.15
- \end{figure}
+ \end{wrapfigure}
 Suppose $A$ chooses strategy $A_{1}$ and $B$ chooses strategy $B_{1}$. It is clear that neither airplane will reach base: the $A$'s gain will be zero ($a_{11}=0$). Suppose strategies $A_{1}$ and $B_{2}$ are chosen. Let us assume that the guns are in corridors I and II. If the aircrafts are flying along different corridors, then six variants are equally probable: they fly along corridors I and II, along corridors I and III, along corridors I and IV, along II and III, along II and IV, or along III and IV. In only one of the six cases will neither plane reach the base (when they fly along corridors I and II). Whichever corridor $B$ chooses to place his guns in, airplanes will always have six equally probable variants and only one does not yield a winning move. Therefore, if strategies $A_{1}$ and 
 $B_{2}$ are chosen, the probable gain for $A$ will be 5/6 ($a_{12}$ = 5/6). Reasoning in the same manner, it is easy to find the rest of the elements of the
 payoff matrix for this game. The resultant $2 \times 3$ matrix is shown in
@@ -1276,7 +1277,7 @@ The coordinates of this point are  $x_{1} = 3/5$ and  $x_{2} = 1$. Hence we find
 $\nu = 5/8, \, p_{1} = 3/8, \, \text{and} \, p_{2} = 5/8$. Thus, $A$'s optimal mixed strategy would be to use strategy $A_{1}$ with probability 3/8 and strategy $A_{2}$ with probability 5/8.
  \begin{figure}[!h]
  \centering
- \includegraphics[width=0.85\textwidth]{figures/aa-graph.pdf}
+ \includegraphics[width=0.85\tfwidth]{figures/aa-graph.pdf}
 \caption{Solution for the game of aircrafts and anti-aircraft guns.\label{aa-graph}}
 %fig 2.16
  \end{figure}

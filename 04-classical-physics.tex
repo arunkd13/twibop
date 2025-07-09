@@ -44,11 +44,11 @@ When the expansion is \redem{adiabatic}, there is no heat exchange with the envi
 \end{equation}
 The expanding gas performs work owing to a decrease in its internal energy, and the gas's temperature therefore falls.
 
-\begin{figure}%[!ht]
+\begin{wrapfigure}[34]{o}{\mfwidth}
 \centering
-\includegraphics[width=0.8\textwidth]{figures/isotherm-adia.pdf}
+\includegraphics[width=0.8\linewidth]{figures/isotherm-adia.pdf}
 \caption{Isothermal and adiabatic processes.\label{iso-adia}}
-\end{figure}
+\end{wrapfigure}
 
 
 Both of these processes are conventionally shown in \figr{iso-adia}. The processes are also represented on $p-V$ diagrams (where $p$ is the gas pressure). The work $A'$ performed by the gas in an isothermal expansion from volume $V= V_{1}$ to $V= V_{2}$ equals numerically the yellow area under the plot of $p (V)$ in the figure:
@@ -73,11 +73,11 @@ A = \frac{mRT}{MV} \int\displaylimits_{V_{1}}^{V_{2}} \frac{1}{V} \,\, \dd V = \
 
 \txthead{The Carnot cycle.} In 1824, a 28-year-old engineer called Sadi, Carnot published a book in Paris entitled \redem{Refl\'exions sur la puissance moteurice du feu et Ie machine propre \`a developper cette puissance} (Reflections on the Driving Force of Fire and Machines Capable of Developing This Force). Unfortunately, his ideas as presented in the book were only appreciated many years later, and long after he had died. Carnot was investigating the work obtained from heat engines. He showed that a heat machine not only needs a hot body, it also requires a second body with a lower temperature. The first body is conventionally called the heat source, and the second is called the heat sink. Besides the heat source and heat sink, there must be a working substance (a liquid, steam, or gas), which transmits the heat from the heat source to the heat sink and performs work in the process. Carnot considered a closed cycle consisting of two isotherms and two adiabats. Later this cycle was called the \redem{Carnot cycle}. It is shown in \figr{ideal-gas} for an ideal gas. 
 
-\begin{figure}%[!ht]
+\begin{wrapfigure}{O}{\mfwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/carnot.pdf}
+\includegraphics[width=\linewidth]{figures/carnot.pdf}
 \caption{Carnot cycle for an ideal gas.\label{ideal-gas}}
-\end{figure}
+\end{wrapfigure}
 
 Suppose $T_{1}$, is the temperature of the heat source and $T_{2}$ is that of the heat sink. Moving from point 1 to point 2 (the isotherm for $T_{1}$ ), the gas receives a heat $Q_{1}$ from the heat source and expands, thus spending energy to perform work $A$. From point 2 to point 3 (along an adiabat), the gas performs work $A$; and its temperature falls to $T_{2}$. From point 3 to point 4 (the isotherm for $T_{2}$) the gas gives a heat $Q_{2}$ to the heat sink, and this heat equals the work $A_{2}$ performed to compress the gas. From point 4 to point 1 (another adiabat), the work $A_{4}$ is expended to compress the gas, and this goes to increasing the internal energy of the gas, so its temperature rises to $T_{1}$. The result is that the working substance returns to its initial state 1. 
 
@@ -121,12 +121,12 @@ It is useful to demonstrate the equivalence of the formulations given by Kelvin 
 
 On the other hand, suppose that, despite Clausius's formulation, we succeed in getting some quantity of heat $Q$ to conduct itself from a cooler body (at a temperature $T_{2}$) to a hotter one ($T_{1}$), and subsequently, allow this heat to go naturally from the hotter body to the cooler at the same time performing some work $A'$ while the rest of the heat $Q_{1} = Q - A'$ returns to the cooler body. This process is shown in \figr{perp}~\drkgry{(a)}. It is clear that this process corresponds to direct transformation of heat $Q - Q_{1}$ into work $A$ (\figr{perp}~\drkgry{(b)}), which evidently contradicts Kelvin's formulation.
 
-\begin{figure}%[!ht]
+\begin{wrapfigure}{O}{\mfwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/perp.pdf}
+\includegraphics[width=\linewidth]{figures/perp.pdf}
 \caption{Work done in transfer of heat from bodies at different temperatures.}
 \label{perp}
-\end{figure}
+\end{wrapfigure}
 
 \txthead{Entropy.} As he was studying Carnot's investigations, Clausius discovered that relationship \eqref{eq-4.8} is similar to a conservation law. The value of $Q_{1}/T_{1}$ ``taken'' by the working substance from the heat source equals the  $|Q_{2}|/T_{1}$ ``conducted'' to the heat sink. Clausius postulated a variable $S$, which like the internal energy is a state function of the body. If the working substance (an ideal gas in this case) receives heat 
 $Q$ at temperature $T$, then $S$ is incremented by
@@ -223,11 +223,6 @@ a rigid system of strictly determined links (as given by Newton's laws) between 
 
 \prtnr ``This is natural because each state of the thrown stone is
 determined by its preceding one and, in its turn, determines the subsequent one.''
-\begin{figure}%[!ht]
-\centering
-\includegraphics[width=\textwidth]{figures/reflect.pdf}
-\caption{Bounce of a stone and an elastic ball.\label{reflect}}
-\end{figure}
 
 \athr ``Another example: a ball hits a wall elastically and bounces
 off (\figr{reflect}~\drkgry{(b)}). If you change the direction of the ball's velocity to the opposite one at point $B$, the situation will recur in the reverse order: the ball will hit the wall and return to point $A$.
@@ -257,6 +252,12 @@ off (\figr{reflect}~\drkgry{(b)}). If you change the direction of the ball's vel
 
 \end{dialogue}
 
+\begin{wrapfigure}{O}{\mfwidth}
+\centering
+\includegraphics[width=\linewidth]{figures/reflect.pdf}
+\caption{Bounce of a stone and an elastic ball.\label{reflect}}
+\end{wrapfigure}
+
 Let us finish with this dialogue because it has become a bit too long. We agreed that it referred to 1861. Therefore, I could not use arguments that were unknown at the time. But here I can cite two more arguments in favour of my position. Firstly, note that entropy is explicitly expressed in terms of probability, and that namely this makes it possible to explain every puzzle of thermodynamics. We shall discuss this in detail in the next sections. Secondly, it follows from quantum physics that the assumption (made by my partner) that he can assign coordinates and velocities to all the molecules simultaneously proves to be inconsistent. This cannot be done due to fundamental considerations, which we shall talk about in detail in Chapter 5. 
 
 And now let us discuss molecules moving in a gas.
@@ -264,12 +265,12 @@ And now let us discuss molecules moving in a gas.
 \txthead{Movements of gas molecules in thermodynamic equilibrium.} Suppose a gas of mass $m$ is in thermal equilibrium. The gas occupies volume $V$ and has temperature $T$ and pressure $p$.
 
 Each gas molecule moves with a velocity which is constant in magnitude and direction until the molecule collides with either another molecule or the wall. On the whole, the picture of molecular movements is chaotic: the molecules move in different directions with different velocities, there are chaotic collisions leading to changes in the direction of movement and the absolute value of the velocities of molecules. Let us take an imaginary ``photograph'' of the molecules' positions at a single moment in time. It might look like the one in (\figr{mol-photo}), where for simplicity's sake only two rather than three dimensions are considered (the ``photograph'' is flat). It is clear that the points (molecules) fill the volume of the vessel uniformly (the vessel in the figure is the square). Suppose $N$ is the total number of molecules in the vessel; $N=N_{A}m /M$, where $N_{A}$ is Avogadro's number. At any site within the vessel and at any moment in time, the number of molecules per unit volume is the same (on average), $N/V$. Molecules may be found with equal probability at any point within the vessel.
-\begin{figure}%[!ht]
+\begin{wrapfigure}{O}{\mfwidth}
 \centering
-\includegraphics[width=0.95\textwidth]{figures/mol-photo.pdf}
+\includegraphics[width=0.95\linewidth]{figures/mol-photo.pdf}
 \caption{A snapshot of the molecules in motion.\label{mol-photo}}
 % fig 4.5
-\end{figure}
+\end{wrapfigure}
 
 Let us use $G (x, y, z) \, \Delta dx \, \Delta dy\, \Delta dz$ to denote the probability of finding a molecule within a volume $ \Delta V = \Delta x \, \Delta y \, \Delta z$ in the vicinity of a point with coordinates $(x, y, z)$. To be more accurate, this is the probability that the $x$-coordinate of the molecule will take a value from $x$ to $x + \Delta x$, its $y$-coordinate from $y$ to $y + \Delta y$, and its $z$-coordinate from $z$ to $z + \Delta z$. At small $ \Delta x, \, \Delta y$, and $ \Delta z$, the function $G(x, y, z)$ will be the density of the probability of finding a molecule at point $(x, y, z)$. The probability density in this case does not depend on the coordinates, hence $G = \text{const}$. Since the probability of finding a molecule somewhere within the vessel is unity, we have
 \begin{equation*}%
@@ -279,13 +280,13 @@ Consequently, $G = 1/V$.
 
 Wherever a unit volume is taken within the vessel, the probability of finding a molecule within the unit volume is $1/V$, i.e. the ratio of the unit volume to the volume of the vessel. Generalizing this conclusion, we can state that the probability of finding a molecule within volume $V_{0}$ is $V_{0}/V$.
 
-\begin{figure}%[!ht]
+\begin{wrapfigure}{O}{\mfwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/mol-dist.pdf}
+\includegraphics[width=\linewidth]{figures/mol-dist.pdf}
 \caption{A snapshot of molecular velocity distribution.}
 \label{mol-dist}
 % fig 4.6
-\end{figure}
+\end{wrapfigure}
 
 Now let us discuss the velocities of the gas molecules. It is clear from the start that the velocities cannot all be equally probable: there should be few molecules with very high and very small velocities. When considering the velocities of molecules, it is convenient to use the concept of a \redem{velocity space}, i.e. the molecular velocities are projected onto the coordinate axes $v_{x}, v_{y}, v_{z}$. For simplicity's sake, \figr{mol-dist} shows only two axes: the $v_{x}$-axis and the $v_{y}$-axis (a two-dimensional velocity space). The figure shows a molecular velocity distribution in a gas for some moment in time. Each point in the figure relates to a molecule. The abscissa of the point is the $x$-projection of the molecule's velocity and the ordinate is its $y$-projection.
 
@@ -331,7 +332,7 @@ f \, (v_{x}, v_{y}, v_{z}) = \left(\frac{\alpha}{\pi} \right) ^{3/2} \, \exp (- 
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/maxwl-dist1.pdf}
+\includegraphics[width=0.75\tfwidth]{figures/maxwl-dist1.pdf}
 \caption{The Gauss velocity distribution.\label{gauss-dist}}
 \end{figure}
 
@@ -349,7 +350,7 @@ where $v^{2} = v_{x}^{2}+ v_{y}^{2} + v_{z}^{2}$.
 	
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.9\textwidth]{figures/velspace.pdf}
+\includegraphics[width=0.9\tfwidth]{figures/velspace.pdf}
 \caption{The velocity space.\label{vel-space}}
 % fig 4.8
 \end{figure}
@@ -361,7 +362,7 @@ Let us take one more step: since each velocity direction is equally probable, le
 This formula expresses the distribution of molecules in an ideal gas by the absolute value of their velocities, i.e. the \redem{Maxwellian distribution}. The probability density $g (v) = \Delta w_{v} / \Delta v$ is shown in \figr{mxwl-space}. It vanishes both when $v$ tends to zero and when it tends to infinity. The ``volume'' of the spherical layer shown in \figr{vel-space}~\drkgry{(b)} vanishes when $v$ tends to zero and the factor $\exp(- \alpha v^{2})$ in the distribution law vanishes when $v$ tends to infinity.
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/dist2.pdf}
+\includegraphics[width=0.8\tfwidth]{figures/dist2.pdf}
 \caption{The Maxwellian velocity distribution.\label{mxwl-space}}
 % fig 4.9
 \end{figure}
@@ -392,7 +393,7 @@ Collisions between molecules push some molecules out of this range of velocity v
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/collisions.pdf}
+\includegraphics[width=0.8\tfwidth]{figures/collisions.pdf}
 \caption{The collisions of molecules with walls of the container.\label{collisions}}
 % fig 4.10
 \end{figure}
@@ -563,7 +564,7 @@ We can see, therefore, that the relative fluctuation of the internal energy of a
 
 \begin{figure*}%[!ht]
 %\centering
-\includegraphics[width=1.4\textwidth]{figures/macro-micro.pdf}
+\includegraphics[width=1.2\tfwidth]{figures/macro-micro.pdf}
 \caption{A comparison of the fluctuations of the micro-variable	$\varepsilon$ and	macro-variable $U$.\label{macro-micro}}
 % fig 4.11
 \end{figure*}
@@ -674,7 +675,7 @@ S= k \ln ( w_{1} \, w_{2}) = k \ln  w_{1}  +k \ln \, w_{2} = S_{1} + S_{2}.
 
 \begin{figure}[!ht]
  \centering
- \includegraphics[width=0.7\linewidth]{figures/macro-state-1.pdf}
+ \includegraphics[width=0.7\tfwidth]{figures/macro-state-1.pdf}
 \caption{Entropy as a measure of disorder in the system.\label{entropy-disorder}}
 %fig-12
  \end{figure}
@@ -804,7 +805,7 @@ Norbert Wiener called information to be negative entropy. Louis Brillouin sugges
 \txthead{Maxwell's demon and its exorcism.} In 1871, Maxwell formulated the following paradox. Suppose a vessel with a gas is separated into two halves ($A$ and $B$) by a partition with a trapdoor over a microscopic hole in it. And suppose, Maxwell continued, a ``being'' (Maxwell called it a ``demon'') controls the trapdoor causing it to close and open the hole so as to let the fastest molecules from the $A$ half of the vessel enter the $B$ half and to let the slowest molecules from the $B$ half into the $A$ half. Thus, the demon would increase the temperature in the $B$ half and decrease it in the $A$ half without doing any work, which evidently contradicts the second law of thermodynamics.
 \begin{figure}[!ht]
  \centering
- \includegraphics[width=0.9\linewidth]{figures/maxwell-demon.pdf}
+ \includegraphics[width=0.9\tfwidth]{figures/maxwell-demon.pdf}
 \caption{Maxwell's demon controls the flow of molecules from one section to another.\label{max-demon}}
  \end{figure}
 When looking at the illustration of Maxwell's demon (\figr{max-demon}), the reader clearly should not think of an evil force. The point of contention is a device that opens and closes a hole in the way the demon described above would act.
