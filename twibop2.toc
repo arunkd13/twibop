@@ -1,40 +1,40 @@
 \contentsline {chapter}{Preface}{7}{chapter*.1}%
 \contentsline {part}{I\hspace {1em}Tamed Chance}{1}{part.1}%
-\contentsline {chapter}{\numberline {1}Mathematics of Randomness}{17}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Probability}{17}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Random Numbers}{28}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Random Events}{33}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Discrete Random Variables}{38}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Continuous Random Variables}{46}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Decision Making}{53}{chapter.2}%
-\contentsline {section}{\numberline {2.1}These Difficult Decisions}{53}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Random Processes with Discrete States}{59}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Queueing Systems}{66}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Method of Statistical Testing}{76}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Games and Decision Making}{84}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Control and Self-control}{97}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The Problem of Control}{97}{section.3.1}%
-\contentsline {section}{\numberline {3.2}From the ``Black Box'' to Cybernetics}{101}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Information }{105}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Selection of Information from Noise}{120}{section.3.4}%
-\contentsline {section}{\numberline {3.5}On the Way to a Stochastic Model of the Brain}{125}{section.3.5}%
-\contentsline {part}{II\hspace {1em}Fundamentality of the Probability Laws}{133}{part.2}%
-\contentsline {chapter}{\numberline {4}Probability in Classical Physics}{135}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Thermodynamics and Its Puzzles }{136}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Molecules in a Gas and Probability }{146}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Pressure and Temperature of an Ideal Gas}{158}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Fluctuations }{161}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Entropy and Probability }{169}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Entropy and Information }{177}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Probability in the Microcosm}{183}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Spontaneous Micro-processes}{184}{section.5.1}%
-\contentsline {section}{\numberline {5.2}From Uncertainty Relations the Wave Function}{195}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Interference and Summing Probability Amplitudes}{200}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Probability and Causality }{208}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Probability in Biology}{213}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction }{213}{section.6.1}%
-\contentsline {section}{\numberline {6.2}The Patterns After the Random Combination of Genes in Crossbreeding}{220}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Mutations }{230}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Evolution Through the Eyes of Geneticists}{235}{section.6.4}%
-\contentsline {chapter}{A Concluding Conversation}{241}{chapter*.83}%
-\contentsline {chapter}{Recommended Literature}{249}{chapter*.84}%
+\contentsline {chapter}{\numberline {1}Mathematics of Randomness}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Probability}{13}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Random Numbers}{21}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Random Events}{25}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Discrete Random Variables}{29}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Continuous Random Variables}{36}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Decision Making}{43}{chapter.2}%
+\contentsline {section}{\numberline {2.1}These Difficult Decisions}{43}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Random Processes with Discrete States}{47}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Queueing Systems}{53}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Method of Statistical Testing}{61}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Games and Decision Making}{67}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Control and Self-control}{79}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The Problem of Control}{79}{section.3.1}%
+\contentsline {section}{\numberline {3.2}From the ``Black Box'' to Cybernetics}{82}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Information }{85}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Selection of Information from Noise}{97}{section.3.4}%
+\contentsline {section}{\numberline {3.5}On the Way to a Stochastic Model of the Brain}{101}{section.3.5}%
+\contentsline {part}{II\hspace {1em}Fundamentality of the Probability Laws}{107}{part.2}%
+\contentsline {chapter}{\numberline {4}Probability in Classical Physics}{109}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Thermodynamics and Its Puzzles }{109}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Molecules in a Gas and Probability }{118}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Pressure and Temperature of an Ideal Gas}{128}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Fluctuations }{130}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Entropy and Probability }{136}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Entropy and Information }{142}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Probability in the Microcosm}{147}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Spontaneous Micro-processes}{147}{section.5.1}%
+\contentsline {section}{\numberline {5.2}From Uncertainty Relations the Wave Function}{156}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Interference and Summing Probability Amplitudes}{160}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Probability and Causality }{166}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Probability in Biology}{171}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction }{171}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The Patterns After the Random Combination of Genes in Crossbreeding}{177}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Mutations }{184}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Evolution Through the Eyes of Geneticists}{188}{section.6.4}%
+\contentsline {chapter}{A Concluding Conversation}{193}{chapter*.83}%
+\contentsline {chapter}{Recommended Literature}{199}{chapter*.84}%
