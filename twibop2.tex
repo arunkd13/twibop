@@ -106,15 +106,15 @@
  \renewcommand{\sectionmark}[1]{\markright{\textls[100]{ #1}}}
  \fancyhf{}
 
-\fancyhead[RO]{\textsc{\smaller{\MakeTextLowercase\rightmark}}}
+\fancyhead[RE]{\textsc{\smaller{\MakeTextLowercase\rightmark}}}
 
 % \fancyhead[RO]{{\smaller{\MakeTextLowercase\rightmark\textsc}}}
 
 
- \fancyhead[L]{\scriptsize{\thepage}}
+ \fancyhead[LE,RO]{\scriptsize{\thepage}}
 
 \makeatletter
-\fancyhead[RE]{\if@mainmatter \fi \textsc{\smaller{\MakeTextLowercase\leftmark}}}
+\fancyhead[LO]{\if@mainmatter \fi \textsc{\smaller{\MakeTextLowercase\leftmark}}}
 \makeatother
 \newcommand{\drkgry}[1]{\textcolor{darkgray}{{#1}}}
 \newcommand*\figr[1]{\hyperref[#1]{Figure~\ref{#1}}}
@@ -272,7 +272,7 @@
 %\verbatimfontfamily{inconsolata}
 \maketitle
 
-
+\cleardoublepage
 
 %\begin{savequote}[0.55\linewidth]
 
